@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-board">
+        <div class="wrapper">
+            <div class="winner-sign"></div>
+            <div class="game-info">
+                Current Player: <span class="current-player">X</span>
+            </div>
+            <table>
+                <tr>
+                    <td class="tile-00"></td>
+                    <td class="tile-01"></td>
+                    <td class="tile-02"></td>
+                </tr>
+                <tr>
+                    <td class="tile-10"></td>
+                    <td class="tile-11"></td>
+                    <td class="tile-12"></td>
+                </tr>
+                <tr>
+                    <td class="tile-20"></td>
+                    <td class="tile-21"></td>
+                    <td class="tile-22"></td>
+                </tr>
+            </table>
+            <div class="restart">Restart</div>
+        </div>
+        <div class="history">
+            <ul class="move-history"></ul>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

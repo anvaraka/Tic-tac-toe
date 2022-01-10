@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.history {
+  height: calc(50vh + 90px);
+}
+
+.move-history {
+  margin-left: 20px;
+  height: 100%;
+  width: 350px;
+  /* background-color: blanchedalmond; */
+  padding: 10px;
+}
+
+.move-history li {
+  margin: 10px 0;
+  text-align: center;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: calc(50vh + 20px);
+  background-color: lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-info {
+  font-weight: bold;
+  height: 20px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+table {
+  width: 50vh;
+  height: 50vh;
+  margin: 15px 0;
+}
+
+td {
+  background-color: black;
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  font-size: calc(5vh);
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.restart {
+  width: 50px;
+  height: 20px;
+  background-color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.winner-sign {
+  position: absolute;
+  height: 50px;
+  z-index: 100;
+  top: -50px;
+  width: 100%;
+  color: red;
+  background-color: rgba(250, 250, 250, 0.95);
+  font-size: 30px;
+  font-weight: bolder;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* .winner-sign {
+    position: absolute;
+    height: 50px;
+    z-index: 100;
+    top: -50px;
+    width: 100%;
+    color: red;
+    background-color: rgba(250, 250, 250, 0.95);
+    font-size: 30px;
+    font-weight: bolder;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   */
